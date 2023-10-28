@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
-const port = 3000; // Specify the port you want to use
+const port = 80; // Specify the port you want to use
 
 app.get('/', (req, res) => {
-    console.log("Hello Saii Varun M R from AWS Virtual Server");
+    res.send("Hello Saii Varun M R from AWS Virtual Server");
 });
 
 app.listen(port, () => {
