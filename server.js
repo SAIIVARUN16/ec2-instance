@@ -1,11 +1,7 @@
-const express = require('express');
-const app = express();
-const port = 80; // Specify the port you want to use
+var http = require('http');
 
-app.get('/', (req, res) => {
-    res.send("Hello Saii Varun M R from AWS Virtual Server");
-});
-
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-});
+//create a server object:
+http.createServer(function (req, res) {
+  res.write('A Monk in Cloud'); //write a response to the client
+  res.end(); //end the response
+}).listen(80); //the server object listens on port 80
